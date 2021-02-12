@@ -18,21 +18,37 @@
 <body>
     <main class="c-app">
         <header class="c-header">
-            <a href="#" class="c-logo">
+            <a href="/" class="c-logo">
                 <h1 class="c-logo__text">Travel Planner</h1>
             </a>
 
-            <nav class="c-nav">
-                <ul class="c-nav-list">
-                    <li class="c-nav-list__item">Africa</li>
-                    <li class="c-nav-list__item">Americas</li>
-                    <li class="c-nav-list__item">Asia</li>
-                    <li class="c-nav-list__item">Europe</li>
-                    <li class="c-nav-list__item">Oceania</li>
-                </ul>
+            <nav class="c-nav c-nav-list">
+                <label class="c-nav-list__item">
+                    Africa
+                    <input checkd type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" value="africa" name="region">
+                </label>
+                <label class="c-nav-list__item">
+                    Americas
+                    <input checkd type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" value="americas" name="region">
+                </label>
+                <label class="c-nav-list__item">
+                    Asia
+                    <input checkd type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" value="asia" name="region">
+                </label>
+                <label class="c-nav-list__item">
+                    Europe
+                    <input checkd type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" value="europe" name="region">
+                </label>
+                <label class="c-nav-list__item">
+                    Oceania
+                    <input checkd type="radio" class="c-nav-list__input o-hide-accessible js-region-radio" value="oceania" name="region">
+                </label>
             </nav>
             <div class="c-counter">
-                <span class="c-counter__current js-countries-visited">49</span>/250
+                <p class="c-counter__description">Countries visited</p>
+                <p class="c-counter__count">
+                    <span class="c-counter__current js-countries-visited">49</span>/250
+                </p>
             </div>
         </header>
 
@@ -51,6 +67,12 @@
             </section>
         </article>
     </main>
+
+    <article class="c-coutries js-countries">
+        <div class="c-loader">
+            <p class="c-class_loader">The app is loading...</p>
+        </div>
+    </article>
 
 </body>
 </html>

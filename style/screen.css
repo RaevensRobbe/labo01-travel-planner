@@ -62,7 +62,7 @@ body{
 
     /* appearance */
     background-color: var(--theme-color-xxxxx-dark);
-
+    box-shadow: 0 1px 4px 1px var(--theme-color-xxx-light);
     /* other */
 
 }
@@ -110,7 +110,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     */
-
 }
 .c-nav-list__item {
     display: inline-block;
@@ -128,11 +127,35 @@ body{
     margin-left: 1.5rem;
 }
 
+.c-nav-list__input:checked + .c-nav-list__item{
+    border-color: var(--theme-color-base);
+}
+
 .c-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 100%;
+
+    padding: 0 2 rem;
+    margin-right: -2rem;
+
+    color: var(--theme-color-xxxxx-dark);
+    background-color: var(--theme-color-xxxx-light);
+}
+
+.c-counter__description{
 
 }
-.c-counter__current{
 
+.c-counter__current{
+    color: var(--theme-color-x-dark);
+}
+
+.c-counter__count{
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 
